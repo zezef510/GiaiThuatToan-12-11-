@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Kết Quả";
+}
+
+<h2>Kết Quả</h2>
+@if (ViewBag.Result != null)
+{
+<p>@ViewBag.Result</p>
+}
+else
+ {
+     <p></p>
+ }
+
+
+
+@if (ViewBag.AscendingOrder != null)
+{
+    <h3>Theo Chiều Tăng Dần</h3>
+    <p>@string.Join(",", ViewBag.AscendingOrder)</p>
+}
+else
+{
+    <p></p>
+}
+
+@if (ViewBag.DescendingOrder != null)
+{
+    <h3>Theo Chiều Giảm Dần</h3>
+    <p>@string.Join(", ", ViewBag.DescendingOrder)</p>
+}
+else
+{
+    <p></p>
+}
+
+@if (ViewBag.NUmberInWords != null)
+{
+
+<p>Số được nhập: @ViewBag.NumberInWords</p>
+}
+else
+            {
+                <p></p>
+            }

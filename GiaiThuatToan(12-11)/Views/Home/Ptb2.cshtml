@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Giải Phương Trình Bậc 2";
+}
+
+<h2>Giải Phương Trình Bậc 2</h2>
+<form method="post" action="@Url.Action("SolveQuadratic", "Home")">
+    Nhập a: <input type="number" name="a" required /><br />
+    Nhập b: <input type="number" name="b" required /><br />
+    Nhập c: <input type="number" name="c" required /><br />
+    <input type="submit" value="Giải" />
+</form>

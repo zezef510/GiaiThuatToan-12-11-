@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Sapxep";
+}
+
+<h2>Nhập Dãy Số</h2>
+<form method="post" action="@Url.Action("SortNumbers", "Home")">
+    Nhập dãy số (cách nhau bằng dấu phẩy): <input type="text" name="numberList" required /><br />
+    <input type="submit" value="Sắp Xếp" />
+</form>

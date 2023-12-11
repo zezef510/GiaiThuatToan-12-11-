@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Đọc Số Thành Xâu";
+}
+
+<h2>Nhập Số</h2>
+<form method="post" action="@Url.Action("ReadNumber", "Home")">
+    Nhập số: <input type="number" name="inputNumber" required /><br />
+    <input type="submit" value="Đọc Số" />
+</form>
